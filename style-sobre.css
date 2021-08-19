@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #282a36;
+  color: white;
+}
+
+header {
+  color: white;
+  padding: 30px;
+  background-color: #252731;
+  text-align: center;
+}
+
+header img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 30px;
+}
+
+main div h2 {
+  font-size: 33px;
+}
+
+main div p {
+  line-height: 50px;
+  font-size: 17px;
+  max-width: 500px;
+  margin: 15px;
+}
+
+main div p strong {
+  font-size: 20px;
+}
+
+main .sobre-empresa {
+  font-size: 33px;
+}
+
+main ul {
+  font-size: 17px;
+  margin: 30px;
+}
+
+main #links h2 {
+  font-size: 45px;
+}
+
+main #links a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  line-height: 50px;
+  border-bottom: 2px solid rgb(39, 202, 134);
+}
+
+main #links a:hover {
+  color: rgb(39, 202, 134);
+  transition: 300ms;
+}
