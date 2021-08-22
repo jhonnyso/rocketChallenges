@@ -20,8 +20,14 @@ header {
 }
 
 header img {
-  height: 70px;
+  height: 60px;
   border-radius: 50%;
+  position: absolute;
+  left: 600px;
+}
+
+header h1 {
+  line-height: 70px;
 }
 
 main {
