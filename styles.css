@@ -11,15 +11,17 @@ body {
 }
 
 header {
+  color: white;
   padding: 30px;
-  background-color: #282a36;
+  background-color: #252731;
+  border-bottom: 1px solid white;
 }
 
 header div img {
   width: 60px;
   border-radius: 50%;
   position: absolute;
-  left: 35px;
+  left: 20px;
   top: 10px;
 }
 
@@ -27,13 +29,38 @@ header div {
   text-align: center;
 }
 
+header div a:nth-of-type(1) {
+  font-size: 30px;
+  left: 60px;
+  position: absolute;
+}
+
 header div a {
   color: white;
   text-decoration: none;
   margin: 0 30px;
+  font-size: 20px;
+  top: 25px;
+  font-weight: bold;
 }
 
 header div a:hover {
   color: rgb(39, 202, 134);
   transition: 300ms;
+}
+
+body {
+  background-color: #282a36;
+  color: rgb(231, 225, 225);
+  font-size: 25px;
+}
+
+body main .content {
+  max-width: 800px;
+  line-height: 30px;
+  margin: 0 auto;
+  font-size: 21px;
+  padding-top: 20px;
+  font-weight: 0;
+  text-align: justify;
 }

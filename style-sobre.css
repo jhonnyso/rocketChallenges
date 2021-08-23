@@ -17,6 +17,7 @@ header {
   padding: 30px;
   background-color: #252731;
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 header img {
@@ -32,17 +33,25 @@ header h1 {
 
 main {
   padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "sobre p-sobre" "tec tec-utilizadas" "footer footer";
+  max-width: 1200px;
 }
 
 main div h2 {
   font-size: 33px;
+  margin: 15px;
+  grid-area: sobre;
 }
 
 main div p {
   line-height: 50px;
-  font-size: 17px;
+  font-size: 18px;
   max-width: 500px;
   margin: 15px;
+  text-align: justify;
+  grid-area: tec;
 }
 
 main div p strong {
@@ -51,23 +60,38 @@ main div p strong {
 
 main .sobre-empresa {
   font-size: 33px;
+  text-align: right;
+  grid-area: p-sobre;
+  padding-top: 12px;
 }
 
 main ul {
-  font-size: 17px;
-  margin: 30px;
+  font-size: 18px;
+  grid-area: tec-utilizadas;
+  margin: -300px 150px 0;
+  line-height: 40px;
+  padding-bottom: 15px;
 }
 
 main #links h2 {
   font-size: 45px;
 }
 
-main #links a {
+footer #links a {
   color: white;
   text-decoration: none;
   margin: 15px;
   line-height: 50px;
   border-bottom: 2px solid rgb(39, 202, 134);
+  align-items: flex-end;
+
+  font-size: 18px;
+}
+
+footer #links {
+  text-align: center;
+  grid-area: footer;
+  margin: 40px;
 }
 
 main #links a:hover {
