@@ -64,3 +64,84 @@ body main .content {
   font-weight: 0;
   text-align: justify;
 }
+
+/* ===CARD=== */
+
+#cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 70%;
+}
+
+.card {
+  background-color: #7159c1;
+}
+
+#post-one img {
+  width: 100%;
+}
+
+#titulo-post,
+#leitura-post {
+  padding: 15px;
+}
+
+#leitura-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#leitura-post p {
+  margin: 5px;
+}
+
+.card-style {
+  background-color: #7159c1;
+  filter: brightness(85%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* ==MODAL== */
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .maximize-modal,
+.close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal .maximize-modal {
+  right: 33px;
+}
+
+/* ==modalOverlay Active== */
+
+.modalOverlay.active {
+  opacity: 1;
+  visibility: initial;
+}

@@ -68,7 +68,7 @@ main .sobre-empresa {
 main ul {
   font-size: 18px;
   grid-area: tec-utilizadas;
-  margin: -300px 150px 0;
+  margin: -320px 150px 0;
   line-height: 40px;
   padding-bottom: 15px;
 }
@@ -80,7 +80,7 @@ main #links h2 {
 footer #links a {
   color: white;
   text-decoration: none;
-  margin: 15px;
+  margin: 45px;
   line-height: 50px;
   border-bottom: 2px solid rgb(39, 202, 134);
   align-items: flex-end;
@@ -91,10 +91,10 @@ footer #links a {
 footer #links {
   text-align: center;
   grid-area: footer;
-  margin: 40px;
+  margin: 30px;
 }
 
-main #links a:hover {
+footer #links a:hover {
   color: rgb(39, 202, 134);
   transition: 300ms;
 }
